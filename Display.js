@@ -8,7 +8,7 @@ class Display {
     this.valorAnterior = '';
     this.signos = {
           add: '+',
-          divide: '%',
+          divide: '÷',
           multiply: 'x',
           subtract: '-',
 
@@ -18,8 +18,6 @@ class Display {
 
    borrar() {
     this.valorActual = this.valorActual.toString().slice(0,-1);
-    if( this.valorActual = '' ) return (this.valorAnterior = this.valorAnterior.toString().slice(0,-1));
-    // this.valorAnterior = this.valorAnterior.toString().slice(0,-1);
     this.imprimirValores();
   }
 
